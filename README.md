@@ -12,6 +12,7 @@ From tutorial https://docs.substra.org/en/stable/examples/substrafl/get_started/
 
 
 Please look at the separate branch to track the progress: https://github.com/KindEmily/Using-Torch-FedAvg-on-MNIST-dataset/tree/Data-and-metrics
+## Tuturial progress 
 - ✅ Setup
 - ⏭️ Data and metrics (in progress)
   - ✅ Data preparation
@@ -22,8 +23,7 @@ Please look at the separate branch to track the progress: https://github.com/Kin
  - 🚫 The rest of tutorial to be done 
 
 # System info 
-Note: This information represents the system state at the time of generation and 
-includes only static, essential data that is unlikely to change frequently.
+Note: This information represents the system state at the time of generation and includes only static, essential data that is unlikely to change frequently.
 
 System Information:
   OS: Windows 11 10.0.22631
