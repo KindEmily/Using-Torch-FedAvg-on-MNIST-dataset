@@ -10,14 +10,16 @@ I hope Substra developers and everyone interested in learning this tool will be 
 # Current progress 
 From tutorial https://docs.substra.org/en/stable/examples/substrafl/get_started/run_mnist_torch.html
 
-✅ Setup
-⏭️ Data and metrics (in progress) 
+
 Please look at the separate branch to track the progress: https://github.com/KindEmily/Using-Torch-FedAvg-on-MNIST-dataset/tree/Data-and-metrics
-  ✅ Data preparation
-  ✅ Dataset registration
-  ⏭️ Metrics definition
-🚫 Machine learning components definition
-  🚫 The rest of tutorial to be done 
+- ✅ Setup
+- ⏭️ Data and metrics (in progress)
+  - ✅ Data preparation
+  - ✅ Dataset registration
+  - ⏭️ Metrics definition
+  - 🌿🌿git brach🌿🌿 Please look at the separate branch to track the progress: [Data-and-metrics](https://github.com/KindEmily/Using-Torch-FedAvg-on-MNIST-dataset/tree/Data-and-metrics) 🌿🌿🌿🌿🌿 
+- 🚫 Machine learning components definition
+ - 🚫 The rest of tutorial to be done 
 
 # System info 
 Note: This information represents the system state at the time of generation and 
