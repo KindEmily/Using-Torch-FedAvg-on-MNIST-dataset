@@ -17,5 +17,7 @@ def prepare_mnist_data():
 
     setup_mnist(data_path, len(DATA_PROVIDER_ORGS_ID))
 
+    return data_path
+
 if __name__ == "__main__":
     prepare_mnist_data()
