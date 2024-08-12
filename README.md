@@ -1,3 +1,9 @@
+# Help needed🥲
+Please help me to understand how to fix the issue with  
+```
+ModuleNotFoundError: No module named 'src'
+```
+
 # This repo 
 The goal of this repo is to share local implementation for the [Using-Torch-FedAvg-on-MNIST-dataset tutorial](https://docs.substra.org/en/stable/examples/substrafl/get_started/run_mnist_torch.html#List-results)
 
@@ -99,3 +105,14 @@ substra.sdk.backends.local.compute.spawner.base.ExecutionError: Command '['C:\\U
 
 (torch_fedavg_assets) C:\Users\probl\Work\Substra_env\Using Torch FedAvg on MNIST dataset>
 ```
+
+# Used local machine specification 
+System Information: OS: Windows 11 10.0.22631 Machine: AMD64
+
+CPU Information: AMD Ryzen 7 7840HS w/ Radeon 780M Graphics 8 cores, 16 threads
+
+Memory Information: Total: 31.22GB
+
+Disk Information: disk_C:: Total: 930.43GB
+
+GPU Information: NVIDIA GeForce RTX 4070 Laptop GPU: Total memory: 8188.0MB
