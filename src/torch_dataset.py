@@ -1,3 +1,6 @@
+import torch
+import torch.nn.functional as F
+
 class TorchDataset(torch.utils.data.Dataset):
     def __init__(self, data_from_opener, is_inference: bool):
         self.x = data_from_opener["images"]
@@ -20,3 +23,4 @@ class TorchDataset(torch.utils.data.Dataset):
 
     def __len__(self):
         return len(self.x)
+    
