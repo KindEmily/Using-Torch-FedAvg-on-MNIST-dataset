@@ -6,6 +6,9 @@ from .dataset_registration import register_data
 from .strategy_config import create_strategy
 from .aggregation_config import create_aggregation_node, create_train_data_nodes
 from .evaluation_config import create_test_data_nodes, create_evaluation_strategy
+from .experiment_config import run_experiment
+from .results_analysis import analyze_results
+from .organizations import clients
 from .organizations import ORGS_ID
 
 def main():
@@ -24,6 +27,7 @@ def main():
     print(f"Train datasample keys: {train_datasample_keys}")
     print(f"Test datasample keys: {test_datasample_keys}")
 
+
     # Create strategy
     strategy = create_strategy(dataset_keys, train_datasample_keys)
 
@@ -37,14 +41,19 @@ def main():
 
     print("Strategy, nodes, and evaluation components created successfully.")
     
-    # Here you would typically run your experiment using the created components
-    # For example:
-    # experiment = execute_experiment(
-    #     strategy, 
-    #     train_data_nodes, 
-    #     aggregation_node,
-    #     evaluation_strategy=evaluation_strategy
-    # )
+    # Run the experiment
+    compute_plan = run_experiment(
+        client=clients[ALGO_ORG_ID],
+        strategy=strategy,
+        train_data_nodes=train_data_nodes,
+        evaluation_strategy=evaluation_strategy,
+        aggregation_node=aggregation_node
+    )
+
+    print(f"Experiment executed successfully. Compute plan key: {compute_plan.key}")
+
+    # Analyze results
+    # analyze_results(clients[ALGO_ORG_ID], compute_plan.key)
 
 if __name__ == "__main__":
     main()
