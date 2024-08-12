@@ -5,6 +5,7 @@ from .prepare_data import prepare_mnist_data
 from .dataset_registration import register_data
 from .strategy_config import create_strategy
 from .aggregation_config import create_aggregation_node, create_train_data_nodes
+from .evaluation_config import create_test_data_nodes, create_evaluation_strategy
 from .organizations import ORGS_ID
 
 def main():
@@ -30,9 +31,20 @@ def main():
     aggregation_node = create_aggregation_node()
     train_data_nodes = create_train_data_nodes(dataset_keys, train_datasample_keys)
 
+    # Create test data nodes and evaluation strategy
+    test_data_nodes = create_test_data_nodes(dataset_keys, test_datasample_keys)
+    evaluation_strategy = create_evaluation_strategy(test_data_nodes)
+
+    print("Strategy, nodes, and evaluation components created successfully.")
+    
     # Here you would typically run your experiment using the created components
     # For example:
-    # experiment = execute_experiment(strategy, train_data_nodes, aggregation_node)
+    # experiment = execute_experiment(
+    #     strategy, 
+    #     train_data_nodes, 
+    #     aggregation_node,
+    #     evaluation_strategy=evaluation_strategy
+    # )
 
 if __name__ == "__main__":
     main()
